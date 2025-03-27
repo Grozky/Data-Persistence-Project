@@ -72,5 +72,6 @@ public class MainManager : MonoBehaviour
     {
         m_GameOver = true;
         GameOverText.SetActive(true);
+        PersistenceManager.Instance.UpdateHighscore(m_Points);
     }
 }
